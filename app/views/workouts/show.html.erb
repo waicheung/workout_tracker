@@ -1,0 +1,8 @@
+<h1>Workout details on <%= @workout.day %> has been logged</h1>
+
+<h3>Exercise:</h3><%= @workout.name %>
+<h3>Set:</h3><%= @workout.set %>
+<h3>Rep:</h3><%= @workout.rep %>
+
+<p><%= link_to 'Add another workout log', new_workout_path %>
+<p><%= link_to 'Homepage', root_path %>

@@ -1,39 +1,40 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <h1>Add new workout</h1>
 <h2>Please enter your workout details:</h2>
 
-<%= form_for(@workout) do |f| %>
-  <div class="row">
-  <div class="col-2 col-m-3">
-  <%= f.label :name %><br>
-  <%= f.text_field :name %>
-  </div>
+<div class="row">
+  <div class="inner-row">
+    <%= form_for(@workout) do |f| %>
+      <div class="col-2 col-m-3">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
 
-  <div class="col-2 col-m-3">
-  <%= f.label :set %><br>
-  <%= f.text_field :set %>
-  </div>
+      <div class="col-2 col-m-3">
+        <%= f.label :set %><br>
+        <%= f.text_field :set %>
+      </div>
 
-  <div class="col-2 col-m-3">
-  <%= f.label :rep %><br>
-  <%= f.text_field :rep %>
-  </div>
+      <div class="col-2 col-m-3">
+        <%= f.label :rep %><br>
+        <%= f.text_field :rep %>
+      </div>
 
-  <div class="col-2 col-m-3">
-  <%= f.label :weight %> (optional)<br>
-  <%= f.text_field :weight %>
-  </div>
+      <div class="col-2 col-m-3">
+        <%= f.label :weight %> (optional)<br>
+        <%= f.text_field :weight %>
+      </div>
 
-  <div class="col-2 col-m-3">
-  <%= f.label :day %><br>
-  <%= f.date_field :day %>
-  </div>
+      <div class="col-2 col-m-3">
+        <%= f.label :day %><br>
+        <%= f.date_field :day %>
+      </div>
 
-  <div class="col-2 col-m-3"><br>
-  <%= f.submit "Add workout" %>
+      <div class="col-2 col-m-3"><br>
+        <%= f.submit "Add workout", class: "sub-button" %>
+      </div>
+    <% end %>
   </div>
-
-<% end %>
+</div>
 
 <%= render 'layouts/footer' %>

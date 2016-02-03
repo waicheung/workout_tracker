@@ -72,17 +72,17 @@ a:hover {
 
 [class*="col-"] {
   float: left;
-  padding: 5px;
+  padding: 2px;
 }
 
-input[type="text"] {
+input[type="text"], [type="date"] {
   width: 100%;
 }
 
 .sub-button {
   font-size: 16px;
   border: none;
-  padding: 5px;
+  padding: 8px;
   background-color: white;
   color: black;
   border: 1px solid;
@@ -109,6 +109,14 @@ input[type="text"] {
     .sub-button {
       width: 100%;
     }
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: purple;
+    margin: 2 0 20px 0;
+  }
 }
 
 footer {

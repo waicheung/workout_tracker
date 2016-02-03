@@ -4,38 +4,38 @@
 <h2>Please enter your workout details:</h2>
 
 <div class="row">
-  <div class="inner-row">
-    <%= form_for(@workout) do |f| %>
-      <div class="col-2 col-m-3">
-        <%= f.label :name %><br>
-        <%= f.text_field :name %>
-      </div>
+  <%= form_for(@workout) do |f| %>
+    <%= render 'shared/error_messages' %>
 
-      <div class="col-2 col-m-3">
-        <%= f.label :set %><br>
-        <%= f.text_field :set %>
-      </div>
+    <div class="col-2">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'error' %>
+    </div>
 
-      <div class="col-2 col-m-3">
-        <%= f.label :rep %><br>
-        <%= f.text_field :rep %>
-      </div>
+    <div class="col-2">
+      <%= f.label :set %>
+      <%= f.text_field :set, class: 'error' %>
+    </div>
 
-      <div class="col-2 col-m-3">
-        <%= f.label :weight %> (optional)<br>
-        <%= f.text_field :weight %>
-      </div>
+    <div class="col-2">
+      <%= f.label :rep %>
+      <%= f.text_field :rep, class: 'error' %>
+    </div>
 
-      <div class="col-2 col-m-3">
-        <%= f.label :day %><br>
-        <%= f.date_field :day %>
-      </div>
+    <div class="col-2">
+      <%= f.label :weight %> (optional)
+      <%= f.text_field :weight, class: 'error' %>
+    </div>
 
-      <div class="col-2 col-m-3"><br>
-        <%= f.submit "Add workout", class: "sub-button" %>
-      </div>
-    <% end %>
-  </div>
+    <div class="col-2">
+      <%= f.label :day %>
+      <%= f.date_field :day, class: 'error' %>
+    </div>
+
+
+      <%= f.submit "Add workout", class: "sub-button" %>
+
+  <% end %>
 </div>
 
 <%= render 'layouts/footer' %>

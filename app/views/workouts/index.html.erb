@@ -19,7 +19,11 @@
         <td><%= workout.name %></td>
         <td><%= workout.set %></td>
         <td><%= workout.rep %></td>
-        <td><%= workout.weight %></td>
+        <% if workout.weight %>
+          <td><%= workout.weight %></td>
+        <% else %>
+          <td> n/a </td>
+        <% end %>
       </tr>
     <% end %>
   </table>

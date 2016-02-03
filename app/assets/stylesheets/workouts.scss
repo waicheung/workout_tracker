@@ -27,16 +27,20 @@ body {
 p {
   font-size: 20px;
 }
+
 table {
   width: 50%;
 }
+
 th {
   background-color: black;
   color: white;
 }
+
 th, td {
   padding: 15px;  
 }
+
 tr:nth-child(even) {
   background-color: gray
 }
@@ -87,9 +91,6 @@ input[type="text"] {
     /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
-    }
-    body {
-        font-size: 20px;
     }
     table {
       width: 100%;

@@ -1,7 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h1>Add new workout</h1>
-<h2>Please enter your workout details:</h2>
+<h1>Add a new workout</h1>
+<h2>Enter your workout details below</h2>
 
 <div class="row">
   <%= form_for(@workout) do |f| %>
@@ -31,7 +31,6 @@
       <%= f.label :day %>
       <%= f.date_field :day, class: 'error' %>
     </div>
-
 
       <%= f.submit "Add workout", class: "sub-button" %>
 

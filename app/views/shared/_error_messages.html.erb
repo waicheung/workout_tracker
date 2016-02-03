@@ -1,7 +1,7 @@
 <% if @workout.errors.any? %>
   <div id="error_explanation">
     <div class="error">
-      The form contains <%= pluralize(@workout.errors.count, "error") %>.
+      Workout not added, the form contains <%= pluralize(@workout.errors.count, "error") %>:
     </div>
     <ul>
     <% @workout.errors.full_messages.each do |msg| %>

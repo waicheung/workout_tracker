@@ -2,7 +2,7 @@
 
 <h1>All workouts</h1>
 
-<% @workout.group_by{ |i| i.day }.sort_by{|key, w| key}.each do |date, daily_workouts| %>
+<% @workout.group_by{ |i| i.day }.sort_by{|key, w| key}.reverse.each do |date, daily_workouts| %>
 
   <h3><%= date %></h3>
   <table>
